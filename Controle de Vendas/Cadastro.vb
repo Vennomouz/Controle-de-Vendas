@@ -10,7 +10,7 @@
             Login.Show()
             Me.Close()
         Else
-            MessageBox.Show("As senhas são diferentes!")
+            MessageBox.Show("As senhas não correspondem!")
         End If
 
     End Sub
