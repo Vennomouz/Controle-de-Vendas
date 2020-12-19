@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class TelaVendedor
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,46 +20,449 @@ Partial Class TelaVendedor
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TabPage = New System.Windows.Forms.TabControl()
+        Me.Cliente = New System.Windows.Forms.TabPage()
+        Me.Produto = New System.Windows.Forms.TabPage()
+        Me.Pedidos = New System.Windows.Forms.TabPage()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.nomeCliente = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.telCliente = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.nomeProd = New System.Windows.Forms.TextBox()
+        Me.marcaProd = New System.Windows.Forms.ComboBox()
+        Me.tipoProd = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.gridPedidos = New System.Windows.Forms.DataGridView()
+        Me.gridProdutos = New System.Windows.Forms.DataGridView()
+        Me.gridClientes = New System.Windows.Forms.DataGridView()
+        Me.gravarGridProd = New System.Windows.Forms.Button()
+        Me.gravarGridCli = New System.Windows.Forms.Button()
+        Me.gravarGridPed = New System.Windows.Forms.Button()
+        Me.TabPage.SuspendLayout()
+        Me.Cliente.SuspendLayout()
+        Me.Produto.SuspendLayout()
+        Me.Pedidos.SuspendLayout()
+        CType(Me.gridPedidos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridProdutos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gridClientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label3
+        'TabPage
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(153, 121)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(93, 29)
-        Me.Label3.TabIndex = 13
-        Me.Label3.Text = "TESTE"
+        Me.TabPage.Controls.Add(Me.Cliente)
+        Me.TabPage.Controls.Add(Me.Produto)
+        Me.TabPage.Controls.Add(Me.Pedidos)
+        Me.TabPage.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabPage.Location = New System.Drawing.Point(0, 0)
+        Me.TabPage.Name = "TabPage"
+        Me.TabPage.SelectedIndex = 0
+        Me.TabPage.Size = New System.Drawing.Size(800, 450)
+        Me.TabPage.TabIndex = 0
+        '
+        'Cliente
+        '
+        Me.Cliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Cliente.Controls.Add(Me.gravarGridCli)
+        Me.Cliente.Controls.Add(Me.gridClientes)
+        Me.Cliente.Controls.Add(Me.Label6)
+        Me.Cliente.Controls.Add(Me.telCliente)
+        Me.Cliente.Controls.Add(Me.Label5)
+        Me.Cliente.Controls.Add(Me.nomeCliente)
+        Me.Cliente.Location = New System.Drawing.Point(4, 22)
+        Me.Cliente.Name = "Cliente"
+        Me.Cliente.Padding = New System.Windows.Forms.Padding(3)
+        Me.Cliente.Size = New System.Drawing.Size(792, 424)
+        Me.Cliente.TabIndex = 0
+        Me.Cliente.Text = "Cliente"
+        Me.Cliente.UseVisualStyleBackColor = True
+        '
+        'Produto
+        '
+        Me.Produto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Produto.Controls.Add(Me.gravarGridProd)
+        Me.Produto.Controls.Add(Me.gridProdutos)
+        Me.Produto.Controls.Add(Me.tipoProd)
+        Me.Produto.Controls.Add(Me.Label9)
+        Me.Produto.Controls.Add(Me.marcaProd)
+        Me.Produto.Controls.Add(Me.Label7)
+        Me.Produto.Controls.Add(Me.Label8)
+        Me.Produto.Controls.Add(Me.nomeProd)
+        Me.Produto.Location = New System.Drawing.Point(4, 22)
+        Me.Produto.Name = "Produto"
+        Me.Produto.Padding = New System.Windows.Forms.Padding(3)
+        Me.Produto.Size = New System.Drawing.Size(792, 424)
+        Me.Produto.TabIndex = 1
+        Me.Produto.Text = "Produtos"
+        Me.Produto.UseVisualStyleBackColor = True
+        '
+        'Pedidos
+        '
+        Me.Pedidos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Pedidos.Controls.Add(Me.gravarGridPed)
+        Me.Pedidos.Controls.Add(Me.gridPedidos)
+        Me.Pedidos.Controls.Add(Me.Label10)
+        Me.Pedidos.Controls.Add(Me.TextBox7)
+        Me.Pedidos.Controls.Add(Me.Label11)
+        Me.Pedidos.Controls.Add(Me.TextBox9)
+        Me.Pedidos.Controls.Add(Me.Label3)
+        Me.Pedidos.Controls.Add(Me.TextBox3)
+        Me.Pedidos.Controls.Add(Me.Label4)
+        Me.Pedidos.Controls.Add(Me.TextBox4)
+        Me.Pedidos.Controls.Add(Me.Label2)
+        Me.Pedidos.Controls.Add(Me.TextBox2)
+        Me.Pedidos.Controls.Add(Me.Label1)
+        Me.Pedidos.Controls.Add(Me.TextBox1)
+        Me.Pedidos.Location = New System.Drawing.Point(4, 22)
+        Me.Pedidos.Name = "Pedidos"
+        Me.Pedidos.Padding = New System.Windows.Forms.Padding(3)
+        Me.Pedidos.Size = New System.Drawing.Size(792, 424)
+        Me.Pedidos.TabIndex = 2
+        Me.Pedidos.Text = "Pedidos"
+        Me.Pedidos.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(65, 50)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(131, 20)
+        Me.TextBox1.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(153, 38)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(61, 27)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(93, 29)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "TESTE"
+        Me.Label1.Size = New System.Drawing.Size(99, 20)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Id do cliente:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(61, 83)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(108, 20)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Id do produto:"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(65, 106)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(131, 20)
+        Me.TextBox2.TabIndex = 2
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(273, 83)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(136, 20)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = "Nome do produto:"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(277, 106)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
+        Me.TextBox3.Size = New System.Drawing.Size(131, 20)
+        Me.TextBox3.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(273, 27)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(127, 20)
+        Me.Label4.TabIndex = 5
+        Me.Label4.Text = "Nome do cliente:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(277, 50)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
+        Me.TextBox4.Size = New System.Drawing.Size(131, 20)
+        Me.TextBox4.TabIndex = 4
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(48, 26)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(127, 20)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Nome do cliente:"
+        '
+        'nomeCliente
+        '
+        Me.nomeCliente.Location = New System.Drawing.Point(52, 49)
+        Me.nomeCliente.Name = "nomeCliente"
+        Me.nomeCliente.Size = New System.Drawing.Size(131, 20)
+        Me.nomeCliente.TabIndex = 2
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(253, 26)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(69, 20)
+        Me.Label6.TabIndex = 5
+        Me.Label6.Text = "Tel / Cel:"
+        '
+        'telCliente
+        '
+        Me.telCliente.Location = New System.Drawing.Point(257, 49)
+        Me.telCliente.Name = "telCliente"
+        Me.telCliente.Size = New System.Drawing.Size(131, 20)
+        Me.telCliente.TabIndex = 4
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(263, 33)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(57, 20)
+        Me.Label7.TabIndex = 9
+        Me.Label7.Text = "Marca:"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(48, 33)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(132, 20)
+        Me.Label8.TabIndex = 7
+        Me.Label8.Text = "Nome do produto"
+        '
+        'nomeProd
+        '
+        Me.nomeProd.Location = New System.Drawing.Point(52, 56)
+        Me.nomeProd.Name = "nomeProd"
+        Me.nomeProd.Size = New System.Drawing.Size(131, 20)
+        Me.nomeProd.TabIndex = 6
+        '
+        'marcaProd
+        '
+        Me.marcaProd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.marcaProd.FormattingEnabled = True
+        Me.marcaProd.Items.AddRange(New Object() {"Nike", "Adidas", "DC", "Vans", "Hurley", "Puma"})
+        Me.marcaProd.Location = New System.Drawing.Point(267, 56)
+        Me.marcaProd.Name = "marcaProd"
+        Me.marcaProd.Size = New System.Drawing.Size(127, 21)
+        Me.marcaProd.TabIndex = 10
+        '
+        'tipoProd
+        '
+        Me.tipoProd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.tipoProd.FormattingEnabled = True
+        Me.tipoProd.Items.AddRange(New Object() {"Camisa", "Calça", "Shorts", "Tenis"})
+        Me.tipoProd.Location = New System.Drawing.Point(479, 56)
+        Me.tipoProd.Name = "tipoProd"
+        Me.tipoProd.Size = New System.Drawing.Size(127, 21)
+        Me.tipoProd.TabIndex = 12
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(475, 33)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(43, 20)
+        Me.Label9.TabIndex = 11
+        Me.Label9.Text = "Tipo:"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(484, 83)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(57, 20)
+        Me.Label10.TabIndex = 11
+        Me.Label10.Text = "Marca:"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(488, 106)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.ReadOnly = True
+        Me.TextBox7.Size = New System.Drawing.Size(131, 20)
+        Me.TextBox7.TabIndex = 10
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(484, 27)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(73, 20)
+        Me.Label11.TabIndex = 9
+        Me.Label11.Text = "Tel / Cel :"
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(488, 50)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.ReadOnly = True
+        Me.TextBox9.Size = New System.Drawing.Size(131, 20)
+        Me.TextBox9.TabIndex = 8
+        '
+        'gridPedidos
+        '
+        Me.gridPedidos.AllowUserToAddRows = False
+        Me.gridPedidos.AllowUserToDeleteRows = False
+        Me.gridPedidos.BackgroundColor = System.Drawing.Color.DarkSlateGray
+        Me.gridPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.gridPedidos.GridColor = System.Drawing.SystemColors.ActiveCaption
+        Me.gridPedidos.Location = New System.Drawing.Point(65, 166)
+        Me.gridPedidos.Name = "gridPedidos"
+        Me.gridPedidos.ReadOnly = True
+        Me.gridPedidos.RowHeadersVisible = False
+        Me.gridPedidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.gridPedidos.Size = New System.Drawing.Size(554, 217)
+        Me.gridPedidos.TabIndex = 565
+        Me.gridPedidos.Tag = "x"
+        '
+        'gridProdutos
+        '
+        Me.gridProdutos.AllowUserToAddRows = False
+        Me.gridProdutos.AllowUserToDeleteRows = False
+        Me.gridProdutos.BackgroundColor = System.Drawing.Color.DarkSlateGray
+        Me.gridProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.gridProdutos.GridColor = System.Drawing.SystemColors.ActiveCaption
+        Me.gridProdutos.Location = New System.Drawing.Point(52, 115)
+        Me.gridProdutos.Name = "gridProdutos"
+        Me.gridProdutos.ReadOnly = True
+        Me.gridProdutos.RowHeadersVisible = False
+        Me.gridProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.gridProdutos.Size = New System.Drawing.Size(554, 217)
+        Me.gridProdutos.TabIndex = 566
+        Me.gridProdutos.Tag = "x"
+        '
+        'gridClientes
+        '
+        Me.gridClientes.AllowUserToAddRows = False
+        Me.gridClientes.AllowUserToDeleteRows = False
+        Me.gridClientes.BackgroundColor = System.Drawing.Color.DarkSlateGray
+        Me.gridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.gridClientes.GridColor = System.Drawing.SystemColors.ActiveCaption
+        Me.gridClientes.Location = New System.Drawing.Point(52, 108)
+        Me.gridClientes.Name = "gridClientes"
+        Me.gridClientes.ReadOnly = True
+        Me.gridClientes.RowHeadersVisible = False
+        Me.gridClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.gridClientes.Size = New System.Drawing.Size(554, 217)
+        Me.gridClientes.TabIndex = 566
+        Me.gridClientes.Tag = "x"
+        '
+        'gravarGridProd
+        '
+        Me.gravarGridProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridProd.Location = New System.Drawing.Point(641, 115)
+        Me.gravarGridProd.Name = "gravarGridProd"
+        Me.gravarGridProd.Size = New System.Drawing.Size(123, 48)
+        Me.gravarGridProd.TabIndex = 567
+        Me.gravarGridProd.Text = "GRAVAR"
+        Me.gravarGridProd.UseVisualStyleBackColor = True
+        '
+        'gravarGridCli
+        '
+        Me.gravarGridCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridCli.Location = New System.Drawing.Point(644, 108)
+        Me.gravarGridCli.Name = "gravarGridCli"
+        Me.gravarGridCli.Size = New System.Drawing.Size(123, 48)
+        Me.gravarGridCli.TabIndex = 568
+        Me.gravarGridCli.Text = "GRAVAR"
+        Me.gravarGridCli.UseVisualStyleBackColor = True
+        '
+        'gravarGridPed
+        '
+        Me.gravarGridPed.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridPed.Location = New System.Drawing.Point(648, 166)
+        Me.gravarGridPed.Name = "gravarGridPed"
+        Me.gravarGridPed.Size = New System.Drawing.Size(123, 48)
+        Me.gravarGridPed.TabIndex = 568
+        Me.gravarGridPed.Text = "GRAVAR"
+        Me.gravarGridPed.UseVisualStyleBackColor = True
         '
         'TelaVendedor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TabPage)
         Me.Name = "TelaVendedor"
         Me.Text = "TelaVendedor"
+        Me.TabPage.ResumeLayout(False)
+        Me.Cliente.ResumeLayout(False)
+        Me.Cliente.PerformLayout()
+        Me.Produto.ResumeLayout(False)
+        Me.Produto.PerformLayout()
+        Me.Pedidos.ResumeLayout(False)
+        Me.Pedidos.PerformLayout()
+        CType(Me.gridPedidos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridProdutos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gridClientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
+    Friend WithEvents TabPage As TabControl
+    Friend WithEvents Cliente As TabPage
+    Friend WithEvents Produto As TabPage
+    Friend WithEvents Pedidos As TabPage
     Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents telCliente As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents nomeCliente As TextBox
+    Friend WithEvents tipoProd As ComboBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents marcaProd As ComboBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents nomeProd As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents gridPedidos As DataGridView
+    Friend WithEvents gridClientes As DataGridView
+    Friend WithEvents gridProdutos As DataGridView
+    Friend WithEvents gravarGridCli As Button
+    Friend WithEvents gravarGridProd As Button
+    Friend WithEvents gravarGridPed As Button
 End Class

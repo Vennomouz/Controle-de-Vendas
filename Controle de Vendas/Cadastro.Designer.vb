@@ -22,7 +22,6 @@ Partial Class Cadastro
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -34,16 +33,6 @@ Partial Class Cadastro
         Me.Label6 = New System.Windows.Forms.Label()
         Me.nome = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(325, 345)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(149, 13)
-        Me.Label4.TabIndex = 13
-        Me.Label4.Text = "cadastrar novo vendedor"
         '
         'Label3
         '
@@ -144,7 +133,6 @@ Partial Class Cadastro
         Me.Controls.Add(Me.nome)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.confirmarSenha)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
@@ -157,8 +145,6 @@ Partial Class Cadastro
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
