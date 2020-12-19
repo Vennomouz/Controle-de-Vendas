@@ -5,12 +5,12 @@ Public Class Metodos
     Dim conexao As New Conexao
     Dim connect = conexao.Conectar()
 
-    Public Sub CadastrarUsuario(ByVal name As String, ByVal user As String, ByVal pass As String)
+    Public Sub CadastrarUsuario(ByVal user As Usuario)
         Dim sql As String = "INSERT INTO USUARIO (Nome, Usuario, Senha) VALUES (@name, @User, @Pass)"
         Dim objCmd As New MySqlCommand(sql, connect)
-        objCmd.Parameters.AddWithValue("@name", name)
-        objCmd.Parameters.AddWithValue("@User", user)
-        objCmd.Parameters.AddWithValue("@Pass", pass)
+        objCmd.Parameters.AddWithValue("@name", user.nome)
+        objCmd.Parameters.AddWithValue("@User", user.usuario)
+        objCmd.Parameters.AddWithValue("@Pass", user.senha)
 
         Try
             If System.Data.ConnectionState.Open Then
