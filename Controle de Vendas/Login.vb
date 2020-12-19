@@ -2,13 +2,14 @@
     Dim metodos As New Metodos
     Dim user As String
     Dim pass As String
-    Dim bool As Boolean
+    Dim objUser As Usuario
     Private Sub btnEntrar_Click(sender As Object, e As EventArgs) Handles btnEntrar.Click
         user = usuario.Text
         pass = senha.Text
-        bool = metodos.Logar(user, pass)
-        If bool = True Then
-            Dim tela As TelaVendedor = New TelaVendedor(user, pass)
+        objUser = metodos.Logar(user, pass)
+
+        If objUser.nome <> "" Then
+            Dim tela As TelaVendedor = New TelaVendedor(objUser.nome, objUser.usuario, objUser.senha)
             tela.Show()
             Me.Hide()
         Else

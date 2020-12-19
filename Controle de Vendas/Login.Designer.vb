@@ -42,6 +42,7 @@ Partial Class Login
         '
         Me.senha.Location = New System.Drawing.Point(285, 210)
         Me.senha.Name = "senha"
+        Me.senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.senha.Size = New System.Drawing.Size(246, 20)
         Me.senha.TabIndex = 1
         '

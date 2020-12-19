@@ -5,9 +5,10 @@ Public Class Metodos
     Dim conexao As New Conexao
     Dim connect = conexao.Conectar()
 
-    Public Sub CadastrarUsuario(ByVal user As String, ByVal pass As String)
-        Dim sql As String = "INSERT INTO USUARIO (Usuario, Senha) VALUES (@User, @Pass)"
+    Public Sub CadastrarUsuario(ByVal name As String, ByVal user As String, ByVal pass As String)
+        Dim sql As String = "INSERT INTO USUARIO (Nome, Usuario, Senha) VALUES (@name, @User, @Pass)"
         Dim objCmd As New MySqlCommand(sql, connect)
+        objCmd.Parameters.AddWithValue("@name", name)
         objCmd.Parameters.AddWithValue("@User", user)
         objCmd.Parameters.AddWithValue("@Pass", pass)
 
@@ -32,9 +33,11 @@ Public Class Metodos
         Dim sql As String = "SELECT * FROM USUARIO WHERE usuario = @user AND senha = @pass"
         Dim objCmd As New MySqlCommand(sql, connect)
         Dim reader As MySqlDataReader
-        Dim bool As Boolean
         objCmd.Parameters.AddWithValue("@User", user)
         objCmd.Parameters.AddWithValue("@Pass", pass)
+        Dim usuario As New Usuario("", "", "")
+
+        'Dim bool As Boolean
 
         Try
             If System.Data.ConnectionState.Open Then
@@ -42,7 +45,10 @@ Public Class Metodos
             End If
             connect.Open()
             reader = objCmd.ExecuteReader()
-            bool = reader.HasRows
+            If reader.Read Then
+                usuario = New Usuario(reader.GetString("nome"), reader.GetString("usuario"), reader.GetString("senha"))
+            End If
+            'bool = reader.HasRows
 
         Catch ex As Exception
             MessageBox.Show(ex.ToString)
@@ -50,7 +56,8 @@ Public Class Metodos
             connect.Close()
         End Try
 
-        Return bool
+        'Return bool
+        Return usuario
 
     End Function
 
