@@ -9,7 +9,7 @@
         objUser = metodos.Logar(user, pass)
 
         If objUser.nome <> "" Then
-            Dim tela As TelaVendedor = New TelaVendedor(objUser.nome, objUser.usuario, objUser.senha)
+            Dim tela As TelaVendedor = New TelaVendedor(objUser)
             tela.Show()
             Me.Hide()
         Else

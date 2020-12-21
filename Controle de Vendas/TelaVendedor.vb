@@ -3,10 +3,11 @@
     Dim cli As New Cliente("", 0)
     Dim prod As New Produto("", "", "")
     Dim pedido As New Pedido(0, "", 0, 0, "", "", "")
-    Public Sub New(ByRef name As String, ByRef user As String, ByRef pass As String)
+    Public Sub New(ByVal objUser As Usuario)
 
         ' Esta chamada é requerida pelo designer.
         InitializeComponent()
+        MessageBox.Show("Bem vindo " + objUser.nome + "!")
         metodos.CarregaGrid(gridClientes, "SELECT * FROM CLIENTE")
         metodos.CarregaGrid(gridProdutos, "SELECT * FROM PRODUTOS")
         metodos.CarregaGrid(gridPedidos, "SELECT * FROM PEDIDOS")

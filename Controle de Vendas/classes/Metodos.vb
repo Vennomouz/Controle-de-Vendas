@@ -136,9 +136,8 @@ Public Class Metodos
 
     End Function
 
-    Public Sub CarregaGrid(ByRef grid As DataGridView, ByRef sql As String)
+    Public Sub CarregaGrid(ByRef grid As DataGridView, ByVal sql As String)
         Cursor.Current = Cursors.AppStarting
-        'Dim sql As String = "SELECT * FROM estagio." & tabela & ""
 
         Try
 
