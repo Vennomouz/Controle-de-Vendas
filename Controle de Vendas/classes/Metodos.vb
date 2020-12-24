@@ -56,7 +56,7 @@ Public Class Metodos
         Dim sql As String = "INSERT INTO PRODUTOS (Nome, Marca, Tipo) VALUES (@name, @marca, @tipo)"
         Dim objCmd As New MySqlCommand(sql, connect)
         objCmd.Parameters.AddWithValue("@name", produto.nome)
-        objCmd.Parameters.AddWithValue("@marca", produto.nome)
+        objCmd.Parameters.AddWithValue("@marca", produto.marca)
         objCmd.Parameters.AddWithValue("@tipo", produto.tipo)
 
         Try
