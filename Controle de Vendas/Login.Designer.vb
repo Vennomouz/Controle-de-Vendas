@@ -69,6 +69,8 @@ Partial Class Login
         'btnEntrar
         '
         Me.btnEntrar.BackColor = System.Drawing.Color.Crimson
+        Me.btnEntrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick
+        Me.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEntrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEntrar.ForeColor = System.Drawing.Color.White
         Me.btnEntrar.Location = New System.Drawing.Point(325, 293)
