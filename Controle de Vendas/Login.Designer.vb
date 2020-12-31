@@ -113,6 +113,7 @@ Partial Class Login
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.senha)
         Me.Controls.Add(Me.usuario)
+        Me.MaximizeBox = False
         Me.Name = "Login"
         Me.Text = "Login"
         Me.ResumeLayout(False)

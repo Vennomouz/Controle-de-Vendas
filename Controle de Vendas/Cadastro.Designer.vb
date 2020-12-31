@@ -130,6 +130,7 @@ Partial Class Cadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.nome)
@@ -141,6 +142,7 @@ Partial Class Cadastro
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.senha)
         Me.Controls.Add(Me.usuario)
+        Me.MaximizeBox = False
         Me.Name = "Cadastro"
         Me.Text = "Cadastro"
         Me.ResumeLayout(False)

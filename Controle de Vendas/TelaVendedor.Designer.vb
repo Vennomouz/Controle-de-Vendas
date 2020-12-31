@@ -445,6 +445,7 @@ Partial Class TelaVendedor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.TabPage)
+        Me.MaximizeBox = False
         Me.Name = "TelaVendedor"
         Me.TabPage.ResumeLayout(False)
         Me.Cliente.ResumeLayout(False)
