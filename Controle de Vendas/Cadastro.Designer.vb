@@ -46,13 +46,15 @@ Partial Class Cadastro
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.Crimson
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(314, 392)
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(314, 370)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(167, 40)
         Me.Button1.TabIndex = 11
         Me.Button1.Text = "Cadastrar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label2
         '

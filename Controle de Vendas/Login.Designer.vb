@@ -68,13 +68,15 @@ Partial Class Login
         '
         'btnEntrar
         '
+        Me.btnEntrar.BackColor = System.Drawing.Color.Crimson
         Me.btnEntrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEntrar.ForeColor = System.Drawing.Color.White
         Me.btnEntrar.Location = New System.Drawing.Point(325, 293)
         Me.btnEntrar.Name = "btnEntrar"
         Me.btnEntrar.Size = New System.Drawing.Size(167, 40)
         Me.btnEntrar.TabIndex = 4
         Me.btnEntrar.Text = "Entrar"
-        Me.btnEntrar.UseVisualStyleBackColor = True
+        Me.btnEntrar.UseVisualStyleBackColor = False
         '
         'Label3
         '
@@ -89,7 +91,9 @@ Partial Class Login
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.RoyalBlue
         Me.Label4.Location = New System.Drawing.Point(336, 242)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(149, 13)
@@ -100,6 +104,7 @@ Partial Class Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 389)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)

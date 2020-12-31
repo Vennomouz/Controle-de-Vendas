@@ -96,13 +96,15 @@ Partial Class TelaVendedor
         '
         'gravarGridCli
         '
-        Me.gravarGridCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridCli.BackColor = System.Drawing.Color.Crimson
+        Me.gravarGridCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridCli.ForeColor = System.Drawing.Color.White
         Me.gravarGridCli.Location = New System.Drawing.Point(644, 108)
         Me.gravarGridCli.Name = "gravarGridCli"
         Me.gravarGridCli.Size = New System.Drawing.Size(123, 48)
         Me.gravarGridCli.TabIndex = 568
-        Me.gravarGridCli.Text = "GRAVAR"
-        Me.gravarGridCli.UseVisualStyleBackColor = True
+        Me.gravarGridCli.Text = "Gravar"
+        Me.gravarGridCli.UseVisualStyleBackColor = False
         '
         'gridClientes
         '
@@ -175,13 +177,15 @@ Partial Class TelaVendedor
         '
         'gravarGridProd
         '
-        Me.gravarGridProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridProd.BackColor = System.Drawing.Color.Crimson
+        Me.gravarGridProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridProd.ForeColor = System.Drawing.Color.White
         Me.gravarGridProd.Location = New System.Drawing.Point(641, 115)
         Me.gravarGridProd.Name = "gravarGridProd"
         Me.gravarGridProd.Size = New System.Drawing.Size(123, 48)
         Me.gravarGridProd.TabIndex = 567
-        Me.gravarGridProd.Text = "GRAVAR"
-        Me.gravarGridProd.UseVisualStyleBackColor = True
+        Me.gravarGridProd.Text = "Gravar"
+        Me.gravarGridProd.UseVisualStyleBackColor = False
         '
         'gridProdutos
         '
@@ -326,13 +330,15 @@ Partial Class TelaVendedor
         '
         'gravarGridPed
         '
-        Me.gravarGridPed.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridPed.BackColor = System.Drawing.Color.Crimson
+        Me.gravarGridPed.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridPed.ForeColor = System.Drawing.Color.White
         Me.gravarGridPed.Location = New System.Drawing.Point(651, 166)
         Me.gravarGridPed.Name = "gravarGridPed"
         Me.gravarGridPed.Size = New System.Drawing.Size(123, 48)
         Me.gravarGridPed.TabIndex = 568
-        Me.gravarGridPed.Text = "GRAVAR"
-        Me.gravarGridPed.UseVisualStyleBackColor = True
+        Me.gravarGridPed.Text = "Gravar"
+        Me.gravarGridPed.UseVisualStyleBackColor = False
         '
         'gridPedidos
         '
