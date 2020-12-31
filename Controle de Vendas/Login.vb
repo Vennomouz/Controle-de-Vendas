@@ -21,4 +21,15 @@
         Cadastro.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Label4_MouseHover(sender As Object, e As EventArgs) Handles Label4.MouseHover
+        Label4.Font = New Font("Microsoft Sans Serif", 8.25!, FontStyle.Bold Or FontStyle.Underline)
+        Label4.Size = New Size(149, 13)
+    End Sub
+
+    Private Sub Label4_MouseLeave(sender As Object, e As EventArgs) Handles Label4.MouseLeave
+        Label4.Font = New Font("Microsoft Sans Serif", 8.25!, FontStyle.Bold)
+        Label4.Size = New Size(149, 13)
+    End Sub
+
 End Class
