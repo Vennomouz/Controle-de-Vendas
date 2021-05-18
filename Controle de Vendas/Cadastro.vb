@@ -1,6 +1,6 @@
 ﻿Public Class Cadastro
     Dim metodos As New Metodos
-    Dim user As New Usuario("", "", "")
+    Dim user As New Usuario()
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         user.nome = nome.Text
         user.usuario = usuario.Text

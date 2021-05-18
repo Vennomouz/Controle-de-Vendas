@@ -9,4 +9,8 @@
         Me.senha = senha
     End Sub
 
+    Public Sub New()
+
+    End Sub
+
 End Class

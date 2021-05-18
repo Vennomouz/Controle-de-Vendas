@@ -1,8 +1,8 @@
 ﻿Public Class TelaVendedor
     Dim metodos As New Metodos
-    Dim cli As New Cliente("", 0)
-    Dim prod As New Produto("", "", "")
-    Dim pedido As New Pedido(0, "", 0, 0, "", "", "")
+    Dim cli As New Cliente()
+    Dim prod As New Produto()
+    Dim pedido As New Pedido()
     Public Sub New(ByVal objUser As Usuario)
 
         ' Esta chamada é requerida pelo designer.
@@ -50,4 +50,5 @@
         metodos.CadastrarPedido(pedido)
         metodos.CarregaGrid(gridPedidos, "SELECT * FROM PEDIDOS")
     End Sub
+
 End Class

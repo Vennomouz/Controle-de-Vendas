@@ -6,4 +6,7 @@
         Me.nome = nome
         Me.tel = tel
     End Sub
+    Public Sub New()
+
+    End Sub
 End Class

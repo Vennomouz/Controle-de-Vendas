@@ -16,4 +16,7 @@
         Me.marcaProduto = marcaProduto
         Me.tipoProduto = tipoProduto
     End Sub
+    Public Sub New()
+
+    End Sub
 End Class

@@ -8,4 +8,7 @@
         Me.marca = marca
         Me.tipo = tipo
     End Sub
+    Public Sub New()
+
+    End Sub
 End Class

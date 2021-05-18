@@ -110,7 +110,7 @@ Public Class Metodos
         objCmd.Parameters.AddWithValue("@User", user)
         objCmd.Parameters.AddWithValue("@Pass", pass)
         Dim reader As MySqlDataReader
-        Dim usuario As New Usuario("", "", "")
+        Dim usuario As New Usuario()
 
         'Dim bool As Boolean
 
