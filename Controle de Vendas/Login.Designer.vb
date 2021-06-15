@@ -69,8 +69,12 @@ Partial Class Login
         'btnEntrar
         '
         Me.btnEntrar.BackColor = System.Drawing.Color.Crimson
+<<<<<<< HEAD
+        Me.btnEntrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+=======
         Me.btnEntrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Firebrick
         Me.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
         Me.btnEntrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEntrar.ForeColor = System.Drawing.Color.White
         Me.btnEntrar.Location = New System.Drawing.Point(325, 293)
@@ -93,9 +97,15 @@ Partial Class Login
         'Label4
         '
         Me.Label4.AutoSize = True
+<<<<<<< HEAD
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+=======
         Me.Label4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
         Me.Label4.ForeColor = System.Drawing.Color.RoyalBlue
         Me.Label4.Location = New System.Drawing.Point(336, 242)
         Me.Label4.Name = "Label4"
@@ -108,6 +118,10 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
+<<<<<<< HEAD
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+=======
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
         Me.ClientSize = New System.Drawing.Size(800, 389)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -116,7 +130,11 @@ Partial Class Login
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.senha)
         Me.Controls.Add(Me.usuario)
+<<<<<<< HEAD
+        Me.ForeColor = System.Drawing.Color.Black
+=======
         Me.MaximizeBox = False
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
         Me.Name = "Login"
         Me.Text = "Login"
         Me.ResumeLayout(False)

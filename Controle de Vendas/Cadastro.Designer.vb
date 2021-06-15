@@ -47,10 +47,16 @@ Partial Class Cadastro
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Crimson
+<<<<<<< HEAD
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(314, 375)
+=======
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(314, 370)
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(167, 40)
         Me.Button1.TabIndex = 11

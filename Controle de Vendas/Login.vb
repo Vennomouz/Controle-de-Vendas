@@ -1,4 +1,6 @@
-﻿Public Class Login
+﻿Imports System.Drawing
+Imports System.Drawing.Drawing2D
+Public Class Login
     Dim metodos As New Metodos
     Dim user As String
     Dim pass As String
@@ -22,6 +24,15 @@
         Me.Hide()
     End Sub
 
+<<<<<<< HEAD
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Dim roundButtom As New Drawing2D.GraphicsPath
+        'roundButtom.StartFigure()
+        'roundButtom.AddArc(New Rectangle(0, 0, 167, 40), 360, 360)
+        'roundButtom.CloseFigure()
+        'btnEntrar.Region = New Region(roundButtom)
+    End Sub
+=======
     Private Sub Label4_MouseHover(sender As Object, e As EventArgs) Handles Label4.MouseHover
         Label4.Font = New Font("Microsoft Sans Serif", 8.25!, FontStyle.Bold Or FontStyle.Underline)
         Label4.Size = New Size(149, 13)
@@ -32,4 +43,5 @@
         Label4.Size = New Size(149, 13)
     End Sub
 
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
 End Class

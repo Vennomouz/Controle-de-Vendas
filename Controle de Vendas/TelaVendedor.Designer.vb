@@ -97,7 +97,10 @@ Partial Class TelaVendedor
         'gravarGridCli
         '
         Me.gravarGridCli.BackColor = System.Drawing.Color.Crimson
+<<<<<<< HEAD
+=======
         Me.gravarGridCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
         Me.gravarGridCli.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gravarGridCli.ForeColor = System.Drawing.Color.White
         Me.gravarGridCli.Location = New System.Drawing.Point(644, 108)
@@ -179,9 +182,14 @@ Partial Class TelaVendedor
         'gravarGridProd
         '
         Me.gravarGridProd.BackColor = System.Drawing.Color.Crimson
+<<<<<<< HEAD
+        Me.gravarGridProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gravarGridProd.ForeColor = System.Drawing.Color.Transparent
+=======
         Me.gravarGridProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.gravarGridProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gravarGridProd.ForeColor = System.Drawing.Color.White
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
         Me.gravarGridProd.Location = New System.Drawing.Point(641, 115)
         Me.gravarGridProd.Name = "gravarGridProd"
         Me.gravarGridProd.Size = New System.Drawing.Size(123, 48)
@@ -333,7 +341,10 @@ Partial Class TelaVendedor
         'gravarGridPed
         '
         Me.gravarGridPed.BackColor = System.Drawing.Color.Crimson
+<<<<<<< HEAD
+=======
         Me.gravarGridPed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+>>>>>>> 613d87fb8dc6c5fe4190f886e185485b53a7e6d9
         Me.gravarGridPed.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gravarGridPed.ForeColor = System.Drawing.Color.White
         Me.gravarGridPed.Location = New System.Drawing.Point(651, 166)
